@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>隐私权政策 (Privacy Policy) - 快推 EasyPost</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0a0e14;
+      --card: #111823;
+      --border: #1e293b;
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 48px 20px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Segoe UI", Roboto, sans-serif;
+      line-height: 1.75;
+    }
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+    }
+    h1 {
+      margin-top: 0;
+      font-size: 28px;
+      color: #fff;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 16px;
+    }
+    h2 {
+      margin-top: 28px;
+      font-size: 19px;
+      color: var(--accent);
+    }
+    p, li {
+      color: var(--text);
+      font-size: 15px;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 36px 0;
+    }
+    code {
+      background: rgba(56, 189, 248, 0.12);
+      color: var(--accent);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>快推 EasyPost 隐私权政策 (Privacy Policy)</h1>
+    <div class="meta">生效日期 / Effective Date: 2026-10-16</div>
+
+    <p>
+      <strong>快推 EasyPost</strong>（以下简称“本扩展程序”）是一款面向自媒体创作者的纯本地多平台图文与短视频一键分发 Chrome 扩展程序。我们高度重视用户的隐私与数据安全。
+    </p>
+
+    <h2>1. 数据收集与存储（零云端收集）</h2>
+    <ul>
+      <li><strong>不收集任何个人身份信息</strong>：本扩展程序无需注册或登录专属账号，不会收集、上传、存储或分享您的姓名、邮箱、电话、密码、浏览记录或任何个人身份数据。</li>
+      <li><strong>100% 本地存储</strong>：您在工作台中编写的图文/视频草稿（标题、正文、话题标签）、平台勾选偏好及发布历史记录，仅通过浏览器原生 <code>chrome.storage.local</code> 与 IndexedDB 存储在您本人的计算机本地浏览器中，绝不会发送至任何开发者服务器或第三方服务器。</li>
+    </ul>
+
+    <h2>2. 权限使用说明</h2>
+    <ul>
+      <li><code>storage</code>：在用户本地浏览器保存草稿内容、平台偏好设置与本地发布记录。</li>
+      <li><code>tabs</code> &amp; <code>tabGroups</code>：在用户主动点击“一键填入”时，打开目标创作者平台发布后台标签页，并将批量打开的发布标签页归入同一标签组以便管理。</li>
+      <li><code>scripting</code> &amp; <code>host_permissions</code>：仅在用户主动触发分发时，在目标自媒体平台创作者后台（如小红书、抖音、快手、微信视频号/公众号、B站、微博、TikTok、YouTube、Instagram、X 等）注入内容脚本，用于自动填写标题、正文、标签和上传本地媒体文件。</li>
+      <li><code>sidePanel</code>：在发布过程中提供浏览器侧边栏面板，方便查看各平台填入状态与切换标签页。</li>
+      <li><code>clipboardWrite</code>：在用户点击复制按钮或富文本辅助粘贴时将文案写入本地剪贴板。</li>
+      <li><code>alarms</code>：在多平台长耗时分发任务期间保持后台 Service Worker 状态同步。</li>
+    </ul>
+
+    <h2>3. 第三方数据传输声明</h2>
+    <ul>
+      <li>本扩展程序<strong>不会</strong>向任何第三方出售、交易或传输任何用户数据。</li>
+      <li>本扩展程序<strong>不会</strong>将用户数据用于广告投放、用户画像、信用评估或任何与“多平台内容自动填入”单一用途无关的目的。</li>
+    </ul>
+
+    <hr />
+
+    <h2>English Summary (Privacy Policy)</h2>
+    <p>
+      <strong>EasyPost (快推)</strong> is a strictly local Chrome extension designed to help content creators auto-fill their posts and short videos across multiple creator studio platforms.
+    </p>
+    <ul>
+      <li><strong>No Data Collection</strong>: We do NOT collect, transmit, store, or share any personal information, browsing history, authentication credentials, or user content on any external servers.</li>
+      <li><strong>Local Storage Only</strong>: All drafts, preferences, and publish logs are stored exclusively on your local device via <code>chrome.storage.local</code>.</li>
+      <li><strong>Permissions Usage</strong>: Requested permissions (<code>storage</code>, <code>tabs</code>, <code>scripting</code>, <code>tabGroups</code>, <code>sidePanel</code>, <code>clipboardWrite</code>, <code>alarms</code>, and host permissions for creator studios) are used solely to open selected creator platforms and auto-fill the forms when explicitly triggered by the user.</li>
+      <li><strong>No Third-Party Sharing</strong>: We do not sell, transfer, or use user data for advertising, analytics, or creditworthiness purposes.</li>
+    </ul>
+  </div>
+</body>
+</html>
